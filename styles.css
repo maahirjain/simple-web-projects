@@ -156,6 +156,10 @@ textarea {
     border-radius: 10px;
 }
 
+.footer a {
+    color: white;
+}
+
 @media only screen and (max-width: 1165px) {
     .image-area {
         display: none;
