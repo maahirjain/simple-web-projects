@@ -2,8 +2,8 @@
 
 A web calculator I built that supports parentheses, decimals, and follows the [order of operations](https://en.wikipedia.org/wiki/Order_of_operations).
 
-## [Live Preview](https://maahirjain.github.io/calculator)
-Visit at [maahirjain.github.io/calculator](https://maahirjain.github.io/calculator).
+## [Live Preview](https://maahirjain.github.io/simple-web-projects/calculator)
+Visit at [maahirjain.github.io/simple-web-projects/calculator](https://maahirjain.github.io/simple-web-projects/calculator).
 
 ![Screenshot of Calculator](./screenshot.png)
 
