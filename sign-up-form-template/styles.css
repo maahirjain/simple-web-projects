@@ -1,0 +1,187 @@
+* {
+    font-family: "Courier Prime", monospace, sans-serif;
+    text-align: justify;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.image-area {
+    position: relative;
+}
+
+img {
+    height: 100vh;
+}
+
+img + p {
+    color: white;
+    font-size: 0.7rem;
+    position: absolute;
+    text-align: center;
+    opacity: 0.5;
+    left:0;
+    right:0;
+    bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-area {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: lightgray;
+    padding: 2rem;
+}
+
+.form-area > p {
+    font-size: 0.97rem;
+}
+
+
+.form-header > p:first-child {
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.form-header > p:first-child + p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: auto;
+    background-color: white;
+    box-shadow: 10px 10px 0px darkgrey;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-details {
+    display: flex;
+    gap: 1rem;
+    flex: 2 1 0;
+}
+
+.form-details > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1 1 0;
+}
+
+.form-details > div > div input {
+    width: 75%;
+    height: 75%;
+}
+
+label {
+    display: block;
+    font-size: large;
+}
+
+input, textarea {
+    font-size: medium;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 5px 5px 5px darkgray;
+}
+
+input:user-invalid {
+    border: 1px solid red;
+    border-radius: 2px;
+}
+
+#name:valid, #email:valid {
+    border: 1px solid green;
+    border-radius: 2px;
+}
+
+.form-dream {
+    display: flex;
+    flex-direction: column;
+    flex: 4 1 0;
+}
+
+.form-dream > div:last-child {
+    flex: 1 1 0;
+}
+
+button {
+    flex: 0.75 1 0;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: skyblue;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 95%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: auto;
+    border-radius: 10px;
+}
+
+.footer a {
+    color: white;
+}
+
+@media only screen and (max-width: 1165px) {
+    .image-area {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    html {
+        overflow: visible;
+    }
+
+    body {
+        background-color: lightgray;
+    }
+
+    .form-area {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .form-details {
+        flex-direction: column;
+    }
+}
+

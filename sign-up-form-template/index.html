@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NMFC93Z3F8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-NMFC93Z3F8');
+    </script>
+</head>
+<body>
+    <div class="image-area">
+        <img src="./scale.jpg" alt="Inspirational image">
+        <p>Photo by <a href="https://unsplash.com/@goyache" target="_blank" rel="noopener noreferrer">Juan Goyache</a> on <a href="https://unsplash.com/photos/person-in-blue-jacket-climbing-on-rocky-mountain-during-daytime-jHccqSfdZ0w" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
+    </div>
+    <div class="form-area">
+        <p>Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They're not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can't do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.</p>
+        <div class="form-header">
+            <p>THE CRAZY ONES</p>
+            <p>An Invitation</p>
+        </div>
+        <form action="#" method="post">
+            <div class="form-details">
+                <div>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="First Last" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="&#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679;" minlength="8" required>
+                    </div>
+
+                    <div>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="&#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679; &#9679;" minlength="8" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-dream">
+                <div><label for="dream">What is your dream?</label></div>
+                <div><textarea name="dream" id="dream" placeholder="My dream is..."></textarea></div>
+            </div>
+
+            <button type="submit">I'M IN!</button>
+        </form>
+        <div class="footer">Created by <a href="https://maahirjain.github.io/" target="_blank" rel="noopener referrer">Maahir Jain</a></div>
+    </div>
+</body>
+</html>
