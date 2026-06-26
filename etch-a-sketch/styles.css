@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: "Syne Mono", monospace, Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.header, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.35vw;
+    width: 14.5vw;
+    padding: 3vw;
+}
+
+.header {
+    background-color: #3b3b3b;
+}
+
+.footer {
+    flex-direction: column;
+    background-color: gray;
+}
+
+.sketch-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+    text-align: center;
+}
+
+.horizontal-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.grid-size {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #3b3b3b;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.dimensions {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+input {
+    accent-color: gray;
+}
+
+label {
+    color: black;
+}
+
+#color-picker {
+    height: 22px;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    font-family: "Syne Mono", monospace, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.grid {
+    display: flex;
+}
+
+a {
+    display: block;
+    color: white;
+}

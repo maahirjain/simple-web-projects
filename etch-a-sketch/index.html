@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etch-a-Sketch</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./script.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DH056R0BYB"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-DH056R0BYB');
+        </script>
+    </head>
+
+    <body>
+        <div class="header">Etch A Sketch</div>
+        <div class="sketch-area">
+            <div class="options">
+                <div class="horizontal-options">
+                    <div class="grid-size">
+                        <p class="dimensions">16 x 16</p>
+                        <input type="range" min="1" max="100" value="16">
+                    </div>
+                    <button>CLEAR GRID</button>
+                </div>
+                <div class="horizontal-options">
+                    <div>
+                        <input type="checkbox" id="grid-lines" name="grid-lines" checked>
+                        <label for="grid-lines">GRID LINES</label>
+                    </div>
+                    <div>
+                        <input type="color" id="color-picker" name="color-picker">
+                        <label for="color-picker">CHOOSE COLOR</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="eraser" name="eraser">
+                        <label for="eraser">ERASER</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grid"></div>
+        </div>
+        <div class="footer">Created by <a href="https://maahirjain.github.io/" target="_blank" rel="noopener referrer">Maahir Jain</a></div>
+    </body>
+</html>
