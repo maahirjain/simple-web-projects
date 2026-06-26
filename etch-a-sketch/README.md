@@ -4,8 +4,8 @@
 
 A webpage I built to etch a sketch! 
 
-## [Live Preview](https://maahirjain.github.io/etch-a-sketch)
-Visit at [maahirjain.github.io/etch-a-sketch](https://maahirjain.github.io/etch-a-sketch).
+## [Live Preview](https://maahirjain.github.io/simple-web-projects/etch-a-sketch)
+Visit at [maahirjain.github.io/simple-web-projects/etch-a-sketch](https://maahirjain.github.io/simple-web-projects/etch-a-sketch).
 
 <img src="./screenshots/gridlines_screenshot.png" alt="Buzz Sketch with grid lines" width="400px"><img src="./screenshots/nogridlines_screenshot.png" alt="Buzz Sketch without grid lines" width="400px">
 
