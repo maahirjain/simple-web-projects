@@ -1,0 +1,283 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    background-color: lightgray;
+    height: 100vh;
+    margin: 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-row: 1 / 3;
+    background-color: #4B9CD3;
+    color: white;
+    padding: 1.5rem;
+}
+
+.sidebar > div {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.sidebar > div:first-child {
+    margin-left: -0.75rem; 
+    margin-bottom: 2rem;
+}
+
+.sidebar > div:first-child > svg {
+    width: 30px;
+}
+
+.sidebar p {
+    font-weight: bold;
+}
+
+svg {
+    width: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: medium;
+    text-align: center;
+    margin-top: auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    row-gap: 1rem;
+    background-color: white;
+    box-shadow: 3px 3px 5px darkgrey;
+    padding: 1.5rem 2rem;
+}
+
+.header > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+img {
+    width: 20px;
+    margin: 0;
+}
+
+input {
+    flex-grow: 1;
+    background-color: lightgray;
+    height: 30px;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+}
+
+.right-align {
+    margin-left: auto;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    background-color: #4B9CD3;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    border: 2px solid #4B9CD3;
+    border-radius: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 2rem;
+    padding: 2rem 1.5rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    grid-row: 1 / 3;
+}
+
+p, h2, h3, h4 {
+    margin: 0;
+}
+
+.projects > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    flex-grow: 1;
+}
+
+.projects > div > div {
+    flex-grow: 1;
+    background-color: white;
+    overflow: hidden;
+    min-height: 150px;
+    box-shadow: 3px 3px 5px darkgrey;
+    border-radius: 10px;
+}
+
+.border {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1.5rem 1rem;
+    border-left: 8px solid goldenrod;
+}
+
+.border p, .announcements > div p {
+    color: #636363;
+}
+
+.border > div:last-child {
+    display: flex;
+    align-self: flex-end;
+    gap: 1rem;
+    bottom: 1.5rem;
+    right: 1rem;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.announcements > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-grow: 1;
+    background-color: white;
+    box-shadow: 3px 3px 5px darkgrey;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.announcements > div > div {
+    font-size: small;
+}
+
+hr {
+    margin-top: 1rem;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 2rem;
+}
+
+.trending > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+    background-color: white;
+    box-shadow: 3px 3px 5px darkgrey;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.trending > div > div {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    font-size: small;
+}
+
+.trending > div > div p:last-child {
+    color: gray;
+}
+
+.trending > div > div svg:first-child {
+    width: 30px;
+}
+
+img[src="./icons/eye-outline.svg"] {
+    position: absolute;
+    right: 2rem;
+}
+
+.trending > div > div svg:last-child {
+    position: absolute;
+    right: 0;
+}
+
+a {
+    color: white;
+}
+
+@media only screen and (max-width: 1315px) {
+    img[src="./icons/eye-outline.svg"], .trending > div > div svg:last-child {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .announcements > div {
+      justify-content: start;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr 1.5fr 1fr;
+    }
+
+    .notify-menu > img, .notify-menu > strong {
+        display: none;
+    }
+
+    .right-align {
+        margin-left: 0;
+    }
+
+    input {
+        margin-right: auto;
+        margin-left: 0;
+        width: 50%;
+        flex-grow: 0;
+    }
+
+    button {
+        width: 30%;
+        flex-grow: 0;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .announcements {
+        margin-top: 2rem;
+    }
+}
