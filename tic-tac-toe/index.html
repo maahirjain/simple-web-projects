@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1RG3W4D31"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-J1RG3W4D31');
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>TIC TAC TOE</h1>
+    </div>
+
+    <div class="content">
+        <div>
+            <p>Your turn:</p>
+            <img src="./window-close.svg" alt="X icon">
+        </div>
+
+        <div class="grid">
+            <div data-index="0" class="div-hover"></div>
+            <div data-index="1" class="div-hover"></div>
+            <div data-index="2" class="div-hover"></div>
+            <div data-index="3" class="div-hover"></div>
+            <div data-index="4" class="div-hover"></div>
+            <div data-index="5" class="div-hover"></div>
+            <div data-index="6" class="div-hover"></div>
+            <div data-index="7" class="div-hover"></div>
+            <div data-index="8" class="div-hover"></div>
+        </div>
+
+        <p>Created by <a href="https://maahirjain.github.io/" target="_blank" rel="noopener noreferrer">Maahir Jain</a></p>
+    </div>
+
+    <dialog>
+        <div>
+            <img src="./window-close.svg" alt="X icon">
+            <p>wins!</p>
+        </div>
+        <button id="play-again">Play again</button>
+        <button id="back">Back</button>
+    </dialog>
+</body>
+</html>

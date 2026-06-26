@@ -1,0 +1,113 @@
+* {
+    font-family: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    background-color: #FFDB58;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.content > div:first-child, dialog div {
+    display: flex;
+}
+
+.content p:first-child, dialog p {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+p + img, dialog img {
+    width: 50px;
+}
+
+dialog img {
+    margin-right: 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3, clamp(100px, 16vw, 150px));
+    grid-template-columns: repeat(3, clamp(100px, 16vw, 150px));
+    gap: 8px;
+    background-color: lightgray;
+    width: min-content;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.grid img[src$="circle-outline.svg"] {
+    width: 85%;
+}
+
+.content p:last-child {
+    font-size: large;
+    font-style: italic;
+}
+
+.grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+dialog {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: min-content;
+    border: none;
+    border-radius: 10px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+dialog p {
+    white-space: nowrap;
+    margin: 0;
+}
+
+button {
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+button:hover, .div-hover:hover {
+    background-color: #636363;
+    color: white;
+}
+
+.red-bg.red-bg {
+    background-color: red;
+}
+
+.green-bg.green-bg {
+    background-color: green;
+}
+
+a {
+    color: black;
+}
