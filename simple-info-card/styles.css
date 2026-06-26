@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    font-family: monospace, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 16px;
+}
+
+.img-container {
+    background-color: darkgray;
+    grid-column: 1 / -1;
+    object-fit: cover;
+    overflow: hidden;
+    border: 4px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 15px burlywood;
+}
+
+img {
+    width: 216px;
+    transform: scale(1.5);
+}
+
+.hide {
+    display: none;
+}
+
+#real-face-img {
+  transform: translateX(-8px) scale(1.5);
+}
+
+button {
+    font-family: monospace, sans-serif;
+    font-size: 1rem;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+button:hover {
+    border: 2px solid white;
+}
+
+.selected {
+    background-color: black;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card {
+    display: block;
+    background-color: darkgray;
+    width: min(75%, 650px);
+    height: 364px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: 4px solid black;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.wave {
+    animation: wave 2.1s 0.6s infinite;
+    transform-origin: 75% 75%;
+    display: inline-block;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.gt {
+  color: rgb(133, 116, 55);
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(16deg);
+    }
+    20% {
+      transform: rotate(-6deg);
+    }
+    30% {
+      transform: rotate(16deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(16deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+@media (max-height: 720px) {
+  body {
+    align-items: start;
+    padding: 20px;
+  }
+}
