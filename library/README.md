@@ -2,8 +2,8 @@
 
 An online library to create reading lists and mark books that have been read, with local storage.
 
-## [Live Preview](https://maahirjain.github.io/library/)
-Visit at [maahirjain.github.io/library](https://maahirjain.github.io/library/).
+## [Live Preview](https://maahirjain.github.io/simple-web-projects/library/)
+Visit at [maahirjain.github.io/simple-web-projects/library](https://maahirjain.github.io/simple-web-projects/library/).
 
 ![Screenshot of library web page](./screenshot.png)
 
