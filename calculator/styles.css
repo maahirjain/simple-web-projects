@@ -1,0 +1,134 @@
+* {
+    border-radius: 10px;
+    font-family: "Comfortaa", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #eeeeee;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #373A40;
+    width: 350px;
+    min-height: 450px;
+    border-radius: 30px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #686D76;
+    width: 300px;
+    min-height: 100px;
+    margin: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.input {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: darkorange;
+    color: white;
+    font-size: 24px;
+    word-break: break-all;
+    width: 250px;
+    min-height: 25px;
+    padding: 10px;
+    transition: margin 100ms;
+}
+
+.raised-box {
+    -webkit-box-shadow: 0 0 10px rgb(0,0,0);
+    -moz-box-shadow: 0 0 10px rgb(0,0,0);
+}
+
+.result {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    word-break: break-all;
+    width: 250px;
+    height: 50px;
+    outline: 2px solid white;
+    padding: 10px;
+}
+
+.result:hover {
+    box-shadow: 5px 5px 5px #C2B280;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 300px;
+    height: 224px;
+}
+
+.button-rows {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+button {
+    background-color: white;
+    font-size: 16px;
+    width: 50px;
+    border-radius: 15px;
+}
+
+button:hover {
+    box-shadow: 2px 2px 2px #C2B280;
+}
+
+.operators {
+    background-color: darkgray;
+}
+
+.orange-bg {
+    background-color: orange;
+}
+
+.equals {
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+
+.equals:hover {
+    background-color: #C2B280;
+    color: black;
+    border-color: black;
+}
+
+p {
+    font-size: 24px;
+}
+
+a {
+    color: black;
+}
