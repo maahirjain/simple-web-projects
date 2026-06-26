@@ -8,8 +8,8 @@ I created the website as a quick and fun review of elementary HTML skills.
 
 I updated the website with basic CSS styling when I reached later modules ([1](https://www.theodinproject.com/lessons/foundations-the-cascade) and [2](https://www.theodinproject.com/lessons/foundations-block-and-inline)) of the [Foundations Course](https://www.theodinproject.com/paths/foundations/courses/foundations).
 
-## [Live Preview](https://maahirjain.github.io/indian-recipes)
-Visit at [maahirjain.github.io/indian-recipes](https://maahirjain.github.io/indian-recipes).
+## [Live Preview](https://maahirjain.github.io/simple-web-projects/indian-recipes)
+Visit at [maahirjain.github.io/simple-web-projects/indian-recipes](https://maahirjain.github.io/simple-web-projects/indian-recipes).
 
 <img src="./screenshots/index_page_screenshot.png" alt="Index Page Screenshot" width=800> <br>
 <img src="./screenshots/rasgulla_page_screenshot1.png" alt="Rasgulla Page Screenshot 1" width=800> <br>
